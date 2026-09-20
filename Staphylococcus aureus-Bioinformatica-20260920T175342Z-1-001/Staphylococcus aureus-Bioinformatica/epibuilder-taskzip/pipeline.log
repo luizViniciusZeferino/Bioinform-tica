@@ -1,0 +1,103 @@
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+Nextflow 26.04.6 is available - Please consider updating your version to it
+
+ N E X T F L O W   ~  version 25.04.0
+
+Launching `/epibuilder/src/core/pipeline/main.nf` [ridiculous_rutherford] DSL2 - revision: de78161125
+
+WARN: Access to undefined parameter `loc` -- Initialise it to a default value eg. `params.loc = some_value`
+WARN: Access to undefined parameter `proteomes` -- Initialise it to a default value eg. `params.proteomes = some_value`
+Output directory already exists: /tmp/epibuilder/admin/epibuilder-task_20260920_140530
+[-        ] validate_fasta   -
+[-        ] run_bepipred     -
+[-        ] run_localization -
+[-        ] run_epibuilder   -
+[-        ] export_excel     -
+
+executor >  local (1)
+[d0/b119d8] val…ate_fasta (validate_fasta) | 0 of 1
+[-        ] run_bepipred                   -
+[-        ] run_localization               -
+[-        ] run_epibuilder                 -
+[-        ] export_excel                   -
+
+executor >  local (1)
+[d0/b119d8] val…ate_fasta (validate_fasta) | 0 of 1
+[-        ] run_bepipred                   -
+[-        ] run_localization               -
+[-        ] run_epibuilder                 -
+[-        ] export_excel                   -
+
+executor >  local (2)
+[d0/b119d8] val…ate_fasta (validate_fasta) | 0 of 1 ✔
+[-        ] run_bepipred                   -
+[13/072dbe] run…ization (run_localization) | 0 of 1
+[-        ] run_epibuilder                 -
+[-        ] export_excel                   -
+
+executor >  local (3)
+[d0/b119d8] val…ate_fasta (validate_fasta) | 1 of 1 ✔
+[58/9ab423] run_bepipred (bepipred)        | 0 of 1
+[13/072dbe] run…ization (run_localization) | 0 of 1
+[-        ] run_epibuilder                 -
+[-        ] export_excel                   -
+
+executor >  local (3)
+[d0/b119d8] val…ate_fasta (validate_fasta) | 1 of 1 ✔
+[58/9ab423] run_bepipred (bepipred)        | 0 of 1
+[13/072dbe] run…ization (run_localization) | 1 of 1 ✔
+[-        ] run_epibuilder                 -
+[-        ] export_excel                   -
+
+executor >  local (3)
+[d0/b119d8] val…ate_fasta (validate_fasta) | 1 of 1 ✔
+[58/9ab423] run_bepipred (bepipred)        | 1 of 1 ✔
+[13/072dbe] run…ization (run_localization) | 1 of 1 ✔
+[-        ] run_epibuilder                 | 0 of 1
+[-        ] export_excel                   -
+
+executor >  local (4)
+[d0/b119d8] val…ate_fasta (validate_fasta) | 1 of 1 ✔
+[58/9ab423] run_bepipred (bepipred)        | 1 of 1 ✔
+[13/072dbe] run…ization (run_localization) | 1 of 1 ✔
+[90/548e2c] run_epibuilder (epibuilder)    | 0 of 1
+[-        ] export_excel                   -
+
+executor >  local (4)
+[d0/b119d8] val…ate_fasta (validate_fasta) | 1 of 1 ✔
+[58/9ab423] run_bepipred (bepipred)        | 1 of 1 ✔
+[13/072dbe] run…ization (run_localization) | 1 of 1 ✔
+[90/548e2c] run_epibuilder (epibuilder)    | 1 of 1 ✔
+[-        ] export_excel                   -
+
+executor >  local (5)
+[d0/b119d8] val…ate_fasta (validate_fasta) | 1 of 1 ✔
+[58/9ab423] run_bepipred (bepipred)        | 1 of 1 ✔
+[13/072dbe] run…ization (run_localization) | 1 of 1 ✔
+[90/548e2c] run_epibuilder (epibuilder)    | 1 of 1 ✔
+[06/ce93dd] export_excel (export_excel)    | 0 of 1
+
+executor >  local (5)
+[d0/b119d8] val…ate_fasta (validate_fasta) | 1 of 1 ✔
+[58/9ab423] run_bepipred (bepipred)        | 1 of 1 ✔
+[13/072dbe] run…ization (run_localization) | 1 of 1 ✔
+[90/548e2c] run_epibuilder (epibuilder)    | 1 of 1 ✔
+[06/ce93dd] export_excel (export_excel)    | 1 of 1 ✔
+
+executor >  local (5)
+[d0/b119d8] val…ate_fasta (validate_fasta) | 1 of 1 ✔
+[58/9ab423] run_bepipred (bepipred)        | 1 of 1 ✔
+[13/072dbe] run…ization (run_localization) | 1 of 1 ✔
+[90/548e2c] run_epibuilder (epibuilder)    | 1 of 1 ✔
+[06/ce93dd] export_excel (export_excel)    | 1 of 1 ✔
+WARN: Graphviz is required to render the execution DAG in the given format -- See http://www.graphviz.org for more info.
+Completed at: 20-Sep-2026 14:06:42
+Duration    : 1m 6s
+CPU hours   : (a few seconds)
+Succeeded   : 5
+
+
+Pipeline finished successfully
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0curl: (6) Could not resolve host: epibuilder-web

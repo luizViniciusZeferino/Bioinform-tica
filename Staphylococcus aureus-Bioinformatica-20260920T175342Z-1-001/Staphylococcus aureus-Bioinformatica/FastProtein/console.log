@@ -1,0 +1,120 @@
+26/09/20 13:51:33 DEBUG: InterProScan Home (env) = 
+26/09/20 13:51:33 DEBUG: InterProScan Home = 
+26/09/20 13:51:33 INFO: #FastProtein Software 1.0
+26/09/20 13:51:33 INFO: #Developed by Bioinformatic Laboratory - UFSC and IFSC
+26/09/20 13:51:33 INFO: #An automated pipeline for proteomic profile analysis
+26/09/20 13:51:33 INFO: #Questions and issues: renato.simoes@ifsc.edu.br
+26/09/20 13:51:33 INFO: #See more about the project at https://github.com/bioinformatics-ufsc/FastProtein
+26/09/20 13:51:33 INFO: 
+26/09/20 13:51:33 INFO: Process started time: Sun Sep 20 13:51:33 UTC 2026
+26/09/20 13:51:33 INFO: Temporary output folder: /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b
+26/09/20 13:51:33 INFO: Final output file: /FastProtein/web/runs/admin-ProteomaStaphylococcusAureus-1789912292_results.zip
+
+26/09/20 13:51:33 INFO: 
+26/09/20 13:51:34 INFO: Proteins in FASTA: 2889
+26/09/20 13:51:34 INFO: Proteins viable for analysis: 2889
+26/09/20 13:51:34 DEBUG: Clean FASTA generated /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/clean.fasta
+26/09/20 13:51:34 INFO: Executing ERRet - Search for Endoplasmic Reticulum Retention sites 
+26/09/20 13:51:34 INFO: Executing N-Glyc - Search for N-glycosylation sites
+26/09/20 13:51:34 INFO: Executing WoLFPSORT - Subcellular localization prediction
+26/09/20 13:51:34 DEBUG: Looking for /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/wolfpsort.txt
+26/09/20 13:51:34 DEBUG: Looking for /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/raw/wolfpsort.txt
+26/09/20 13:51:34 DEBUG: Command /FastProtein/bin/wolfpsort.sh animal /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/clean.fasta /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/wolfpsort.txt
+26/09/20 14:05:16 DEBUG: Parsing file: /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/wolfpsort.txt
+26/09/20 14:05:16 DEBUG: Parsing file end.
+26/09/20 14:05:16 INFO: 	External Command time: 13M42.385S
+26/09/20 14:05:16 INFO: 	     FastProtein time: 0.045S
+26/09/20 14:05:16 INFO: 	           Total time: 13M42.43S
+26/09/20 14:05:16 INFO: Executing TMHMM-2.0c - Search for transmembrane domains
+26/09/20 14:05:16 DEBUG: Looking for /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/tmhmm2.txt
+26/09/20 14:05:16 DEBUG: Looking for /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/raw/tmhmm2.txt
+26/09/20 14:05:16 DEBUG: Command: /FastProtein/bin/tmhmm2.sh /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/clean.fasta /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/tmhmm2.txt /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b
+26/09/20 14:06:09 DEBUG: /FastProtein
+26/09/20 14:06:09 DEBUG: Parsing file: /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/tmhmm2.txt
+26/09/20 14:06:09 DEBUG: Parsing file end.
+26/09/20 14:06:09 INFO: 	External Command time: 52.598S
+26/09/20 14:06:09 INFO: 	     FastProtein time: 0.014S
+26/09/20 14:06:09 INFO: 	           Total time: 52.612S
+26/09/20 14:06:09 INFO: Executing SignalP-5 - Search for signal peptide
+26/09/20 14:06:09 DEBUG: Looking for /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/signalp5.txt
+26/09/20 14:06:09 DEBUG: Looking for /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/raw/signalp5.txt
+26/09/20 14:06:09 DEBUG: Spliting file
+26/09/20 14:06:09 DEBUG: Generating fasta: signalp-1.fasta
+26/09/20 14:06:09 DEBUG: Splitting FASTA: 1 file(s)
+26/09/20 14:06:09 DEBUG: File added to be removed: /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/signalp-1.fasta
+26/09/20 14:06:09 DEBUG: 1 generated
+26/09/20 14:06:09 DEBUG: Command:/FastProtein/bin/signalp5.sh /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/signalp-1.fasta euk /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/signalp-1.fasta.txt
+26/09/20 14:06:31 DEBUG: Adding file to process: /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/signalp-1.fasta.txt
+26/09/20 14:06:31 DEBUG: File added to be removed: /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/signalp-1.fasta.txt
+26/09/20 14:06:31 DEBUG: Adding header in SignalP5 file
+26/09/20 14:06:31 DEBUG: Adding lines
+26/09/20 14:06:31 DEBUG: Creating Signalp5 file /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/signalp5.txt
+26/09/20 14:06:31 DEBUG: Parsing file end.
+26/09/20 14:06:31 INFO: 	External Command time: 22.253S
+26/09/20 14:06:31 INFO: 	     FastProtein time: 0.071S
+26/09/20 14:06:31 INFO: 	           Total time: 22.324S
+26/09/20 14:06:31 INFO: Executing PredGPI - Search for Glycosylphosphatidylinositol (GPI) domain
+26/09/20 14:06:31 DEBUG: Looking for /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/predgpi.txt
+26/09/20 14:06:31 DEBUG: Looking for /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/raw/predgpi.txt
+26/09/20 14:06:31 DEBUG: Command: /FastProtein/bin/predgpi.sh /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/clean.fasta /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/predgpi.txt
+26/09/20 14:06:52 DEBUG: Parsing file: /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/predgpi.txt
+26/09/20 14:06:52 DEBUG: Parsing file end.
+26/09/20 14:06:52 INFO: 	External Command time: 21.066S
+26/09/20 14:06:52 INFO: 	     FastProtein time: 0.013S
+26/09/20 14:06:52 INFO: 	           Total time: 21.079S
+26/09/20 14:06:52 INFO: Executing Phobius - Search for signal peptide and transmembrane domains
+26/09/20 14:06:52 DEBUG: Looking for /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/phobius.txt
+26/09/20 14:06:52 DEBUG: Looking for /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/raw/phobius.txt
+26/09/20 14:06:52 DEBUG: Command: /FastProtein/bin/phobius.sh /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/clean.fasta /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/phobius.txt
+26/09/20 14:08:02 DEBUG: Parsing file: /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/phobius.txt
+26/09/20 14:08:02 DEBUG: Parsing file end.
+26/09/20 14:08:02 INFO: 	External Command time: 1M9.998S
+26/09/20 14:08:02 INFO: 	     FastProtein time: 0.028S
+26/09/20 14:08:02 INFO: 	           Total time: 1M10.026S
+26/09/20 14:08:02 INFO: Skipping - InterproScan
+26/09/20 14:08:02 INFO: Skipping - Search for similarity
+26/09/20 14:08:04 INFO: Creating output files: .CSV
+26/09/20 14:08:04 DEBUG:    File created: /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/output.csv
+26/09/20 14:08:04 INFO: Creating output files: .TSV
+26/09/20 14:08:04 DEBUG:    File created: /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/output.tsv
+26/09/20 14:08:04 INFO: Creating output files: .TXT
+26/09/20 14:08:04 DEBUG:    File created: /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/output.txt
+26/09/20 14:08:05 INFO: Creating output files: .SEP
+26/09/20 14:08:05 DEBUG:    File created: /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/output.sep
+26/09/20 14:08:05 INFO: Creating Charts
+26/09/20 14:08:05 DEBUG: Command python3 /FastProtein/bin/chart.py /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/output.tsv
+26/09/20 14:08:06 DEBUG: FastProtein chart generation script
+26/09/20 14:08:06 DEBUG: Processing file /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/output.tsv
+26/09/20 14:08:06 DEBUG: Temporary dir /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b
+26/09/20 14:08:06 DEBUG: Destination dir: /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/image
+26/09/20 14:08:06 DEBUG: Creating Dispersion ph x kda
+26/09/20 14:08:06 DEBUG:          kDa  Isoelectric_Point
+26/09/20 14:08:06 DEBUG: 0      34.32               6.16
+26/09/20 14:08:06 DEBUG: 1      49.24               5.35
+26/09/20 14:08:06 DEBUG: 2      56.44               5.54
+26/09/20 14:08:06 DEBUG: 3     111.78               4.64
+26/09/20 14:08:06 DEBUG: 4      39.08               6.18
+26/09/20 14:08:06 DEBUG: ...      ...                ...
+26/09/20 14:08:06 DEBUG: 2884   13.30               4.84
+26/09/20 14:08:06 DEBUG: 2885   35.86               5.12
+26/09/20 14:08:06 DEBUG: 2886   24.54               4.90
+26/09/20 14:08:06 DEBUG: 2887   23.83               5.42
+26/09/20 14:08:06 DEBUG: 2888   17.67               8.33
+26/09/20 14:08:06 DEBUG: 
+26/09/20 14:08:06 DEBUG: [2889 rows x 2 columns]
+26/09/20 14:08:06 DEBUG: Chart created in /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/image/kda-vs-pi.png
+26/09/20 14:08:06 DEBUG: Chart created in /FastProtein/temp/0968c5e4-0f53-41ed-98a3-cfbef064bd7b/image/kda-vs-pi-300dpi.png
+26/09/20 14:08:06 DEBUG: Subcellular localization bar
+26/09/20 14:08:06 DEBUG:       Localization  Proteins
+26/09/20 14:08:06 DEBUG: 5     Cytoskeleton       123
+26/09/20 14:08:06 DEBUG: 0          Cytosol      1436
+26/09/20 14:08:06 DEBUG: 7              E.R        43
+26/09/20 14:08:06 DEBUG: 2    Extracellular       414
+26/09/20 14:08:06 DEBUG: 9         Lysosome         2
+26/09/20 14:08:06 DEBUG: 4    Mitochondrion       136
+26/09/20 14:08:06 DEBUG: 6          Nucleus        85
+26/09/20 14:08:06 DEBUG: 3            Other       157
+26/09/20 14:08:06 DEBUG: 8       Peroxisome         6
+26/09/20 14:08:06 DEBUG: 1  Plasma membrane       487
+26/09/20 14:08:07 INFO: Creating ODF (Open Document Format) file 
+26/09/20 14:08:07 INFO: Creating XLS (Excel Spreadsheet) file
